@@ -1,0 +1,103 @@
+.contact-form__content {
+    margin: 0 auto;
+    max-width: 1230px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form__header {
+    margin: 0 auto;
+    font-family: "Inika", serif;
+    font-size: 20px;
+    color: #8B7969;
+    text-align: center;
+}
+
+.form {
+    width: 100%;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.form__wrapper {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.form__group {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.form-group-title {
+    width: 200px;
+    padding-top: 10px;
+    font-family: Arial;
+    font-size: 15px;
+    color: #8B7969;
+}
+
+.form__label--required {
+    color: red;
+    margin-left: 5px;
+}
+
+.form__group-content {
+    flex: 1;
+}
+
+.form__input--text {
+    display: flex;
+}
+
+.form__input--text .form__input {
+    width: 150px;
+}
+
+.form__input--text.single .form__input {
+    width: 100%;
+    max-width: 400px;
+}
+
+.form__input--text,
+.form__input--radio,
+.form__input--select,
+.form__input--textarea {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form__input,
+.form__select,
+textarea {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    border: none;
+    background-color: #F6F6F6;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.form__error {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.form__button {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.form__button-submit {
+    padding: 10px 30px;
+    font-size: 15px;
+    background-color: #82756A;
+    color: #D9C6B5;
+    border: none;
+    cursor: pointer;
+}

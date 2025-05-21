@@ -1,0 +1,21 @@
+.confirm__content {
+    margin: 0 auto;
+    max-width: 1230px;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.confirm__header {
+    margin: 0 auto;
+    font-family: "Inika", serif;
+    font-size: 20px;
+    color: #8B7969;
+    text-align: center;
+}
+
+.confirm-table {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5px;
+}
