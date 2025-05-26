@@ -24,7 +24,7 @@ class AdminController extends Controller
         $contacts = Contact::Paginate(7);
         //ページネーションを使用して、1ページに7件のデータを表示//
 
-        return view('/admin', compact('contacts', 'categories'));
+        return view('admin', compact('contacts', 'categories'));
     }
 
     /**

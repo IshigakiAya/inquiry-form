@@ -83,7 +83,7 @@
         </div>
         <div class="confirm-table__button">
             <button class="confirm-table__button-submit" type="submit">送信</button>
-            <input type="button" class="confirm-table__button-modify" onclick="history.back()" value="修正">
+            <input class="confirm-table__link-modify" onclick="history.back()" value="修正">
             {{--history.back()は、ブラウザの履歴を1つ戻る機能を持つメソッド--}}
         </div>
     </form>

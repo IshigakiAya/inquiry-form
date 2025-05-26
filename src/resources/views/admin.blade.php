@@ -8,9 +8,13 @@
     <nav>
         <ul class="header__nav">
             <li class="header-nav__item">
-                <a class="header-nav__link" href=/login>logout</a>
+                <form class="header-nav__link" method="post" action="{{route('logout') }}">
+                    @csrf
+                    <button class="header-nav__link--button" type="submit">Logout</button>
+                    {{--ログアウトボタンを押すと、logoutルートにPOSTリクエストが送信される--}}
+                    {{--ログアウト処理は、Laravelによって行われる--}}
+                </form>
             </li>
-            {{--logoutボタンを押すとlogin.blade.phpに遷移する--}}
         </ul>
     </nav>
 @endsection

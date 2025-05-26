@@ -29,7 +29,7 @@ Route::get('/thanks', function () {
     return view('thanks');
 });
 
-Route::get('/admin', [AdminController::class, 'index'])->name('admin.index');
+Route::post('/admin', [AdminController::class, 'index'])->name('admin.index');
 
 Route::get('/admin/search', [AdminController::class, 'search'])->name('admin.search');
 
@@ -37,8 +37,10 @@ Route::get('/admin/{id}', [AdminController::class, 'show'])->name('admin.show');
 
 Route::delete('/admin/{id}', [AdminController::class, 'destroy'])->name('admin.destroy');
 
-Route::get('/admin/export', [AdominController::class, 'export'])->name('admin.export');
+Route::get('/admin/export', [AdminController::class, 'export'])->name('admin.export');
 
 Route::middleware(['auth'])->group(function() {
     Route::get('/admin', [AdminController::class, 'index']);
 });
+
+
